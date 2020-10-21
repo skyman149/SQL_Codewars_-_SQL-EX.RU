@@ -1,0 +1,1 @@
+SELECT price * amount AS TOTAL FROM items;
