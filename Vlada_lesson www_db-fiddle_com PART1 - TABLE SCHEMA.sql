@@ -1,4 +1,11 @@
-#This query creates table 'country'
+
+/* website ready to use with table shown below TO GO:
+    https://www.db-fiddle.com/f/mUvCxoVaPDzKwXJfVZFwwR/0
+*/
+
+/*#This query creates table 'country'*/
+/* 
+
 CREATE TABLE IF NOT EXISTS `country` (
   id int(5) unsigned NOT NULL AUTO_INCREMENT,
   country_name varchar(50) NOT NULL,
@@ -128,3 +135,5 @@ INSERT INTO user (
    'Tatyana', 'Kovalenko', '4308349500', 'kovalenko_t@yandex.ru', '12lo8z8fsud7364bs72kd3', '102 Odoevskogo apt. 189',
    'Kiev', NULL, 5, '298769', 'M', 1, 'student', '2020-06-12', 48
 );
+
+*/
