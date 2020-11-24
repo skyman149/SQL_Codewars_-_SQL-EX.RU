@@ -40,6 +40,10 @@ SELECT * FROM user
 WHERE IS NOT NULL;
 /*only if state info provided*/
 
+SELECT * FROM user
+WHERE email LIKE '%ru';
+/*all user with email finishing on 'ru'*/
+
 
 
 
