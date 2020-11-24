@@ -41,8 +41,15 @@ WHERE IS NOT NULL;
 /*only if state info provided*/
 
 SELECT * FROM user
-WHERE email LIKE '%ru';
-/*all user with email finishing on 'ru'*/
+WHERE email LIKE '%.ru';
+/*all user with email finishing on '.ru'*/
+
+SELECT country_name AS 'Country Name',
+		population AS Population
+FROM country 
+WHERE country_name = 'Belarus';
+/*Country Name	  Population 
+  Belarus	      9452411*/
 
 
 
