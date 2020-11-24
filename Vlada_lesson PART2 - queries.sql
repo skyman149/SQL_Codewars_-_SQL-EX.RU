@@ -30,6 +30,8 @@ WHERE population > 1000000 AND
 	  population < 5000000;
 /*not inclusive both numbers*/
 
+/*
+
 SELECT * FROM user
 WHERE state IS NULL;
 /* IS used only with NULL*/
