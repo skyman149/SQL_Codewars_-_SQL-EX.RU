@@ -1,4 +1,9 @@
-Select country_name, population
+SELECT country_name AS 'Country',
+	   population AS 'Population'
+FROM country;
+/* renames and shows column country_name as Country*/
+
+SELECT country_name, population
 FROM country
 WHERE population > 100000000
 ORDER BY Country_name;
