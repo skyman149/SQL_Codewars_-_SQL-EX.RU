@@ -3,6 +3,14 @@ SELECT country_name AS 'Country',
 FROM country;
 /* renames and shows column country_name as Country*/
 
+SELECT * FROM country
+ORDER BY country_name;
+/* in abc order */
+
+SELECT * FROM country
+ORDER BY country_name DESC;
+/* in reverse abc order, descent */
+
 SELECT country_name, population
 FROM country
 WHERE population > 100000000
@@ -57,6 +65,9 @@ FROM country
 WHERE country_name = 'Belarus';
 /*Country Name	  Population 
   Belarus	      9452411*/
+  
+  
+/* FINISH*/
 
 
 
