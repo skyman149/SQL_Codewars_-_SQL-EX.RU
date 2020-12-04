@@ -67,7 +67,7 @@ WHERE country_name = 'Belarus';
   Belarus	      9452411*/
   
   
-/* FINISH*/
+/* FINISH*/ /* :) (: */
 
 
 
