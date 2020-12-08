@@ -51,5 +51,7 @@ WHERE country_name > 'B'
 AND population_2019 - population_2018 > 1000
 ORDER BY country_name;
 
+/*  DISTINCT  |  LIMIT  */
+
 
 
