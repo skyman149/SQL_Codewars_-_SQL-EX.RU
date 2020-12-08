@@ -63,7 +63,3 @@ LIMIT /*10*/; /* Only 10 countries will be shown */
 
 SELECT DISTINCT * 
 FROM country; /* only unique data will be shown */
-
-
-
-
