@@ -63,3 +63,15 @@ LIMIT /*10*/; /* Only 10 countries will be shown */
 
 SELECT DISTINCT * 
 FROM country; /* only unique data will be shown */
+
+SELECT DISTINCT last_name
+FROM userr
+ORDER by last_name
+/* LIMIT 10; */
+
+
+/*------------------- HOW TO FIND DUPLICATES -------------------*/
+SELECT last_name, COUNT(last_name)
+FROM userr
+GROUP BY last_name
+HAVING COUNT (last_name) > 1;
