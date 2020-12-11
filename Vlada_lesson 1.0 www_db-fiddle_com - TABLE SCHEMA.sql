@@ -3,46 +3,53 @@
     https://www.db-fiddle.com/f/mUvCxoVaPDzKwXJfVZFwwR/0
 */
 
-/*#This query creates table 'country'*/
-/* 
-
-CREATE TABLE IF NOT EXISTS `country` (
+/*
+#This query creates table 'country'
+CREATE TABLE IF NOT EXISTS country (
   id int(5) unsigned NOT NULL AUTO_INCREMENT,
   country_name varchar(50) NOT NULL,
-  population int(255),
+  population_2018 int(255),
+  population_2019 int(255),
   PRIMARY KEY (id)
 ) DEFAULT CHARSET=utf8;
 #These queries populate table 'country' with values
-INSERT INTO country (country_name, population) VALUES ('United States', 329064917);
-INSERT INTO country (country_name, population) VALUES ('Canada', 37411047);
-INSERT INTO country (country_name, population) VALUES ('Russia', 145872256);
-INSERT INTO country (country_name, population) VALUES ('Belarus', 9452411);
-INSERT INTO country (country_name, population) VALUES ('Ukraine', 43993638);
-INSERT INTO country (country_name, population) VALUES ('Kazakhstan', 18551427);
-INSERT INTO country (country_name, population) VALUES ('Armenia', 2957731);
-INSERT INTO country (country_name, population) VALUES ('Bulgaria', 7000119);
-INSERT INTO country (country_name, population) VALUES ('China', 1433783686);
-INSERT INTO country (country_name, population) VALUES ('Cyprus', 1179551);
-INSERT INTO country (country_name, population) VALUES ('Czech Republic', 10689209);
-INSERT INTO country (country_name, population) VALUES ('Greece', 10473455);
-INSERT INTO country (country_name, population) VALUES ('Moldova', 4043263);
-INSERT INTO country (country_name, population) VALUES ('United Kingdom', 67530172);
-INSERT INTO country (country_name, population) VALUES ('Uzbekistan', 32981716);
-INSERT INTO country (country_name, population) VALUES ('Latvia', 1906743);
-INSERT INTO country (country_name, population) VALUES ('Latvia', 1906743);
-INSERT INTO country (country_name, population) VALUES ('Lithuania', 2759627);
-INSERT INTO country (country_name, population) VALUES ('Estonia', 1325648);
-INSERT INTO country (country_name, population) VALUES ('Israel', 8519377);
-INSERT INTO country (country_name, population) VALUES ('Italy', 60550075);
-INSERT INTO country (country_name, population) VALUES ('Slovakia', 5457013);
-INSERT INTO country (country_name, population) VALUES ('Slovenia', 2078654);
-INSERT INTO country (country_name, population) VALUES ('India', 1366417754);
-INSERT INTO country (country_name, population) VALUES ('Germany', 83517045);
-INSERT INTO country (country_name, population) VALUES ('Germany', 83124418);
-INSERT INTO country (country_name, population) VALUES ('Brazil', 211049527);
-INSERT INTO country (country_name, population) VALUES ('Bangladesh', 163046161);
-INSERT INTO country (country_name, population) VALUES ('Belize', 390353);
-INSERT INTO country (country_name, population) VALUES ('Bahrain', 1641172);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('United States', 327096265, 329064917);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Canada', 37074562, 37411047);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Russia', 145734038, 145872256);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Belarus', 9452617, 9452411);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Ukraine', 44246156, 43993638);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Kazakhstan', 18319618, 18551427);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Armenia', 2951745, 2957731);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Bulgaria', 7051608, 7000119);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('China', 1427647786, 1433783686);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Cyprus', 1170125, 1179551);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Czech Republic', 10665677, 10689209);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Greece', 10522246, 10473455);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Moldova', 4051944, 4043263);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('United Kingdom', 67141684, 67530172);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Uzbekistan', 32476244, 32981716);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Latvia', 1928459, 1906743);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Latvia', 1928459, NULL);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Lithuania', 2801264, 2759627);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Estonia', 1322920, 1325648);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Israel', 8381516, 8519377);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Italy', 60627291, 60550075);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Slovakia', 5453014, 5457013);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Slovenia', 2077837, 2078654);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('India', 1352642280, 1366417754);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Germany', 83124418, 83517045);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Germany', 83124418, NULL);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Brazil', 209469323, 211049527);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Bangladesh', 161376708, 163046161);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Belize', 383071, 390353);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Bahrain', 1569446, 1641172);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Indonesia', 267670543, 270625568);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Iran', 81800188, 82913906);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Iraq', 38433600, 39309783);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Ireland', 4818690, 4882495);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Jamaica', 2934847, 2948279);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Narnia', 0, 5);
+INSERT INTO country (country_name, population_2018, population_2019) VALUES ('Lalaland', 2, 3);
 #This query creates table 'users'
 CREATE TABLE IF NOT EXISTS `user` (
   id int(5) unsigned NOT NULL AUTO_INCREMENT,
@@ -135,5 +142,39 @@ INSERT INTO user (
    'Tatyana', 'Kovalenko', '4308349500', 'kovalenko_t@yandex.ru', '12lo8z8fsud7364bs72kd3', '102 Odoevskogo apt. 189',
    'Kiev', NULL, 5, '298769', 'M', 1, 'student', '2020-06-12', 48
 );
-
+INSERT INTO user (
+  first_name, last_name, phone_number, email, password_hash,
+  street_address, city, state, country_id, zip, shirt_size, verified, role, date_registered, rank
+) VALUES (
+   'Artur', 'Pirozhkov', '3124563782', 'pirozhkov_a@tut.by', '98f475dkw846bfn4850', '337 Cherry Ave apt. 67A',
+   'San Diego', 'CA', 1, '98876', 'M', 1, 'student', '2020-01-04', 109
+);
+INSERT INTO user (
+  first_name, last_name, phone_number, email, password_hash,
+  street_address, city, state, country_id, zip, shirt_size, verified, role, date_registered, rank
+) VALUES (
+   'Christina', 'Aguilera', '8187653274', 'aguilerra23@homtail.com', '127fhf749fmdw634b348f6', '23 Beverly Hills Dr',
+   'Los Angeles', 'CA', 1, '97654', 'S', 1, 'student', '2020-05-09', 10
+);
+INSERT INTO user (
+  first_name, last_name, phone_number, email, password_hash,
+  street_address, city, state, country_id, zip, shirt_size, verified, role, date_registered, rank
+) VALUES (
+   'Will', 'Smith', '2137468923', 'mib7777@homtail.com', '90jh765d834f84nfsg64', '76 Beverly Hills Dr',
+   'Los Angeles', 'CA', 1, '97655', 'M', 1, 'student', '2020-08-02', 15
+);
+INSERT INTO user (
+  first_name, last_name, phone_number, email, password_hash,
+  street_address, city, state, country_id, zip, shirt_size, verified, role, date_registered, rank
+) VALUES (
+   'Jenny', 'Smith', '91678364523', 'janesmith76@yahoo.com', '9581fje7f67g4sdf634', '88 Las Palmas Dr',
+   'Sacramento', 'CA', 1, '95825', 'XS', 1, 'student', '2020-08-03', 17
+);
+INSERT INTO user (
+  first_name, last_name, phone_number, email, password_hash,
+  street_address, city, state, country_id, zip, shirt_size, verified, role, date_registered, rank
+) VALUES (
+   'Olga', 'Smirnova', '89587326473', 'smirnovaolga86@yandex.ru', '8iu7shd75ad3h48sds0w', '16 Kamennaya st apt. 135',
+   'Moscow', NULL, 3, 1673929, 'M', 1, 'student', '2019-03-11', 56
+);
 */
