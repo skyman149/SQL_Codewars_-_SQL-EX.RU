@@ -45,11 +45,9 @@
 
 -- HOMEWORK
 
-/*
+-- #Using schema provided (tables ‘user’ and ‘country’), write the following queries:
 
-#Using schema provided (tables ‘user’ and ‘country’), write the following queries:
-
-/****************Query #1****************/
+-- /****************Query #1****************/
 -- #Select all columns in `country` and rename them so that their first letters are capitalized. Display only countries where latest population is more than 1 mln and less than 10 mln, inclusive.
 -- #Sort results by the latest population, starting from the largest.
  
@@ -115,13 +113,16 @@
 -- /****************Query #8****************/
 -- #Select all countries which don't have a value in either one of the population columns.
 
-
-
+-- # SELECT * FROM country
+-- # WHERE country_name IS null OR
+-- #       population_2018 IS null OR
+-- #       population_2019 IS null;
 
 -- /****************Query #9****************/
 -- #Select all user records where state is not empty (null is considered an emply value).
 
-
+-- # SELECT * FROM user
+-- # WHERE state IS NOT null;
 
 -- /****************Query #10****************/
 -- #Select all users from California and Nevada only, with rank over 50. Sort results by rank starting from the largest. Display rank as the first column.
@@ -150,6 +151,4 @@
 -- #       street_address LIKE '__7%';
 -- #  -- OR street_address LIKE '__7'; depends what you mean exactly
 
-
-*/
 
