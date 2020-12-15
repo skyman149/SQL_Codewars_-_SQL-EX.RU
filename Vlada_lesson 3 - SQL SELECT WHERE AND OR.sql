@@ -46,6 +46,7 @@
 -- HOMEWORK
 
 --  https://www.db-fiddle.com/f/gJ2pjktSxj3X8wK65XSfGY/1
+--
 
 -- #Using schema provided (tables ‘user’ and ‘country’), write the following queries:
 
