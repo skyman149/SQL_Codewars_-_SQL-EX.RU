@@ -4,6 +4,25 @@
 */
 
 /*
+
+фиддлы со скриптами:
+User-country: https://www.db-fiddle.com/f/wdvqk2iKEhfJAkwvz7fA7R/1
+Calls-month: https://www.db-fiddle.com/f/ab5zueoUQZB6MEKSiPaavP/0
+Call center database in MySQL: https://www.db-fiddle.com/f/wdvqk2iKEhfJAkwvz7fA7R/1
+Схема базы  Call Center: https://www.sqlshack.com/learn-sql-join-multiple-tables/#gallery-1 (edited) 
+Pinned by Vlada Pobedrya
+12:27
+BikeStores database (for SQL Server): https://codebl0g.wordpress.com/2019/03/23/bike-stores-sql-database/ - download scripts, run in your DBMS (Azure or any other that works with SQL Server).
+*/
+
+/*
+PRESENTATION AND HOMEWORK FROM WHOLE COURSE
+https://docs.google.com/presentation/d/1G-HGzCRzJelRy5L-YtOl_ttLJblcOSKhJZIjHYepefo/edit#slide=id.p
+
+*/
+
+
+/*
 #This query creates table 'country'
 CREATE TABLE IF NOT EXISTS country (
   id int(5) unsigned NOT NULL AUTO_INCREMENT,
