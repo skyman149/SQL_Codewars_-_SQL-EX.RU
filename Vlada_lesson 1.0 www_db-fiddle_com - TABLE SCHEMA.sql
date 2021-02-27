@@ -19,6 +19,25 @@ BikeStores database (for SQL Server): https://codebl0g.wordpress.com/2019/03/23/
 PRESENTATION AND HOMEWORK FROM WHOLE COURSE
 https://docs.google.com/presentation/d/1G-HGzCRzJelRy5L-YtOl_ttLJblcOSKhJZIjHYepefo/edit#slide=id.p
 
+Урок 1:
+ДЗ - https://www.db-fiddle.com/f/4zELHrMfRHR3YymzetzxaJ/9
+Ответы - https://www.db-fiddle.com/f/9z4D2xw2EuGMbRhrPGFvFh/1
+Урок 2:
+ДЗ - https://www.db-fiddle.com/f/bmkWNriK1fpZvuBy75RWKh/0
+Ответы  - https://www.db-fiddle.com/f/rRVVWsCpaZRhnNNL3mcvqV/4
+Доп. ДЗ по урокам 1-2: https://www.db-fiddle.com/f/a97HZJrqM2poAyaq8auzEi/1
+Ответы: https://www.db-fiddle.com/f/jz3CHtbUEQXppLbyJ8ZBHA/4
+Урок 3:
+ДЗ - https://www.db-fiddle.com/f/2eXZpDfEzG8eeyf1cEAPA7/3
+Ответы  - https://www.db-fiddle.com/f/betw82KCmGA482Q1homCD9/10
+Урок 4:
+ДЗ - https://www.db-fiddle.com/f/vTEGCb6tg182pUbcWrbeVY/1
+Ответы  -  https://www.db-fiddle.com/f/jLKcpamVDSU821Wq6SaDMx/3
+Урок 5:
+ДЗ - https://www.db-fiddle.com/f/dvq2xkuV5RAuypLve51JEU/1
+Ответы - pending
+Урок 6 - https://www.db-fiddle.com/f/kv6epcRtDAtyzwcgJK6sLV/1 (edited) 
+
 */
 
 
