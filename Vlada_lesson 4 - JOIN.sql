@@ -67,3 +67,11 @@ FROM calls c
 JOIN month m ON c.month = m.id
 GROUP BY c.year, c.month, m.name
 ORDER BY c.year, c.month;
+
+-- SELECT *
+-- FROM user u
+-- JOIN country c ON u.country_id = c.id;
+
+-- SELECT u.*, c.country_name
+-- FROM user u
+-- JOIN country c ON u.country_id = c.id;
