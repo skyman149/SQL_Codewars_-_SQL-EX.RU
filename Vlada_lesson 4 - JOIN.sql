@@ -20,7 +20,7 @@ GROUP BY year,
 HAVING Total_per_month > 100
 ORDER BY total_per_month DESC;
 
---   INNER JOIN / JOIN
+--   INNER JOIN / JOIN (all you need from both tables)
 
 -- SELECT * 
 -- FROM country
@@ -30,6 +30,30 @@ ORDER BY total_per_month DESC;
 -- FROM country
 -- JOIN user ON country.id = user.country_id;
 
+
+-- "AS" is optional, you can rename like this:
+
+
 -- SELECT c.id, c.country_name, u.first_name, u.last_name
 -- FROM country AS c
 -- JOIN user AS u ON c.id = u.country_id;
+
+
+--     LEFT JOIN (all from left table and only what expected from right table)
+
+
+-- SELECT c.id, c.country_name, 
+-- 	   u.first_name, u.last_name
+-- FROM country c
+-- LEFT JOIN user u ON c.id = u.country_id;
+
+
+--          FULL OUTER JOIN (everything from both tables)
+
+
+-- SELECT c.id, c.country_name, 
+-- 	   u.first_name, u.last_name
+-- FROM country c
+-- FULL OUTER JOIN user u ON c.id = u.country_id;
+
+
