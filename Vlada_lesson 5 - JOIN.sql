@@ -9,4 +9,4 @@ WHERE country.country_name_eng = 'Germany';
 SELECT customer.customer_name AS "Customer Name", 
 	   city.city_name AS "Customer City"
 FROM customer
-LEFT JOIN city ON customer.id = city.id;
+LEFT JOIN city ON customer.city_id = city.id;
