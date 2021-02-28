@@ -24,3 +24,14 @@ SELECT c.start_time, c.end_time, co.outcome_text, e.first_name, e.last_name
 FROM call c
 LEFT JOIN call_outcome co ON c.call_outcome_id = co.id
 LEFT JOIN employee e ON c.employee_id = e.id;
+
+SELECT country_name_eng, city_name, customer_name
+FROM country co
+LEFT JOIN city ci ON co.id = ci.country_id
+LEFT JOIN customer cu ON co.id = cu.city_id;
+
+SELECT country_name_eng, COUNT(customer_name)
+FROM country co
+LEFT JOIN city ci ON co.id = ci.country_id
+LEFT JOIN customer cu ON co.id = cu.city_id
+GROUP BY country_name_eng;
