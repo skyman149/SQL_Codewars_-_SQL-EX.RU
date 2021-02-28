@@ -30,3 +30,6 @@ ORDER BY total_per_month DESC;
 -- FROM country
 -- JOIN user ON country.id = user.country_id;
 
+-- SELECT c.id, c.country_name, u.first_name, u.last_name
+-- FROM country AS c
+-- JOIN user AS u ON c.id = u.country_id;
