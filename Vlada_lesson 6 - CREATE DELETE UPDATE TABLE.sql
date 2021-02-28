@@ -32,7 +32,7 @@
 -- SELECT * FROM `user`;
 
 
---				DELETE FROM table
+--				DELETE FROM table (deletes one by one, slow)
 
 -- DELETE FROM user
 -- WHERE id = 3;
@@ -44,6 +44,29 @@
 -- LIMIT 3;
 
 
--- 				TRUNCATE TABLE (deletes table and re-creates new empty one table) (deltes forewer "no Cntr+Z")
+-- 				TRUNCATE TABLE (deletes table and re-creates new empty one table) (deltes forewer "no Cntr+Z") (delets all in a moment - fast)
 
 -- TRUNCATE TABLE user;
+
+
+-- 				DROP table (delets all permanently unles you have back up; can delete column or table -> VERY DANGARES)
+
+-- DROP user;
+
+
+
+--				ALTER TABLE (updates table)
+
+-- ALTER TABLE `user`
+-- ADD city varchar(100) NOT NULL
+-- AFTER last_name; -- adds "city" in specific place
+
+-- ALTER TABLE `user`
+-- ADD city varchar(100)
+-- FIRST; -- adds "city" in specific placeas first column
+
+-- ALTER TABLE `user`
+-- ADD city varchar(100) -- adds "city" as the last column
+
+-- ALTER TABLE `user`
+-- DROP COLUMN email;
