@@ -61,3 +61,9 @@ SELECT c.date, c.year, m.name, c.inbound, c.outbound, c.transferred
 FROM calls c
 JOIN month m ON c.month = m.id;
 
+SELECT c.year Year, m.name Name,
+	   SUM(c.outbound) Outbound, SUM(c.inbound) Inbound, SUM(c.transferred) Transferred
+FROM calls c
+JOIN month m ON c.month = m.id
+GROUP BY c.year, c.month, m.name
+ORDER BY c.year, c.month;
