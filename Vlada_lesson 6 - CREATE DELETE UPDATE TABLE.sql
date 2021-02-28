@@ -55,7 +55,7 @@
 
 
 
---				ALTER TABLE (updates table)
+--				ALTER TABLE (updates table, renames table or column)
 
 -- ALTER TABLE `user`
 -- ADD city varchar(100) NOT NULL
@@ -70,3 +70,40 @@
 
 -- ALTER TABLE `user`
 -- DROP COLUMN email;
+
+-- ALTER TABLE `user`
+-- RENAME TO user1;  -- renames table
+
+
+-- SELECT * FROM `user`;
+-- ALTER TABLE `user`
+-- CHANGE COLUMN email city17 varchar(100)  -- renames column
+-- AFTER last_name;  -- placed after last_name column
+-- SELECT * FROM `user`;
+
+
+--				RENAME table
+
+-- RENAME TABLE `user` TO user1;
+
+-- exercises
+SELECT * FROM country;
+UPDATE country
+SET country_name = "USA"
+WHERE id = 1;
+SELECT * FROM country;
+
+-- SELECT * FROM country;
+-- UPDATE country
+-- SET country_name = "USA"
+-- WHERE id = 1;
+-- DELETE FROM country
+-- ORDER BY id DESC
+-- LIMIT 1;
+-- SELECT * FROM country;
+
+
+
+
+
+
