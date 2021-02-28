@@ -56,4 +56,8 @@ ORDER BY total_per_month DESC;
 -- FROM country c
 -- FULL OUTER JOIN user u ON c.id = u.country_id;
 
+--EX
+SELECT c.date, c.year, m.name, c.inbound, c.outbound, c.transferred
+FROM calls c
+JOIN month m ON c.month = m.id;
 
