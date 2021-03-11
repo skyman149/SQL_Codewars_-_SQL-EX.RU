@@ -18,3 +18,6 @@ NOTE: You're solution should use pure SQL. Ruby is used within the test cases to
 SELECT products.*, companies.name AS company_name
 FROM products
 JOIN companies ON companies.id = products.company_id;
+
+
+-- https://www.codewars.com/kata/5802e32dd8c944e562000020/solutions/sql
